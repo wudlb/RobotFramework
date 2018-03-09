@@ -1,0 +1,15 @@
+现在只安装DatabaseLibrary 库，Python 操作不同的数据库，还需要安装相应的数据库驱动。
+Oracle 数据库驱动：cx_Oracle
+https://pypi.python.org/pypi/cx_Oracle
+cx_Oracle 是一个用来连接并操作Oracle 数据库的Python 扩展模块， 支持包括Oracle 9.2 10.2
+以及11.1 等版本。
+MySQL 数据库驱动：PyMySQL
+https://pypi.python.org/pypi/PyMySQL/
+这个包包含一个纯python MySQL 客户端库。
+
+
+7.2 操作Oracle 数据库
+Connect To Database Using Custom Params		cx_Oracle		'username','password','192.168.201.138:1521/ORCL'
+											连接数据库配置信息，用户名，密码，		IP地址，端口号，数据库名
+Execute Sql String		select * from student
+Disconnect From Database
